@@ -1,0 +1,23 @@
+{
+  "name": "landing_page_one",
+  "version": "1.0.0",
+  "description": "A responsive front end landing page for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/VektorTech/Responsive_Site_One.git"
+  },
+  "keywords": [
+    "responsive",
+    "html",
+    "css",
+    "js",
+    "sass",
+    "webpack"
+  ],
+  "author": "Kenny Sutherland",
+  "license": "ISC"
+}
