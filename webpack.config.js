@@ -47,7 +47,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-          title: 'Page Title',
+          title: 'YinYangYoga - Online Classes and Meditation',
           minify: {
             collapseWhitespace: true
           },
