@@ -1,1 +1,5 @@
-console.log('work now please');
+var css = require('./sass/style.scss');
+
+var testo = require('./plugin.js');
+
+console.log(testo);

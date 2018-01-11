@@ -2,13 +2,14 @@
   "name": "landing_page_one",
   "version": "1.0.0",
   "description": "A responsive front end landing page for portfolio",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --inline",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git remote add origin https://github.com/VektorTech/Responsive_Site_One.git"
+    "url": "git remote add origin https://github.com/VektorTech/Landing_Page.git"
   },
   "keywords": [
     "responsive",
@@ -19,5 +20,19 @@
     "webpack"
   ],
   "author": "Kenny Sutherland",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.10.1"
+  }
 }
