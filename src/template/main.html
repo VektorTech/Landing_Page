@@ -1,191 +1,206 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
   <div class="header">
-    <a href="index.html" title="Home"><img src="" alt="Broken Image"/></a>
+    <a href="index.html" title="Home" id="logo"><img src="" alt="Broken Image"/></a>
       <div class="nav">
         <a href="" id="menu"></a>
 
-        <ul class="navbar">
-          <li><a href="">home</a></li>
-          <li><a href="">our teachers</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">studio tour</a></li>
-        </ul>
+        <div class="headnav">
+          <ul class="navbar">
+            <li><a href="">home</a></li>
+            <li><a href="">our teachers</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">studio tour</a></li>
+          </ul>
 
-        <ul id="log_sign">
-          <button><a href="">login</a></button>
-          <button><a href="">join us</a></button>
-        </ul>
+          <ul id="log_sign">
+            <button><a href="">login</a></button>
+            <button><a href="">join us</a></button>
+          </ul>
+        </div>
       </div>
   </div>
-
-  <div class="container">
-
+  <br>
     <div class="banner"><!--Parallax vid-->
       <div class="inner-banner">
         <h3>Are you at home? Traveling maybe?</h3>
         <p>Hey! You can do <span id="title">Yin Yang Yoga</span> anywhere.</p>
       </div>  
 
-      <button id="trial"><a href=""> Start Your Free Trial Here</a></button>
+      <button id="trial"><a href=""> Start Your Free Trial Here</a></button> 
       <button id="learn"><a href="">Or Learn More</a></button>
     </div>
+
+  <div class="container">
+    <section class="yy-tech-dev">
+      <div class="slides">
+        <div class="desc">
+          <h3>On all your devices</h3>
+          <p>Access any of our content on any of your devices</p>
+        </div>
+        <div class="imgdesc"><img src="" alt="Broken Image"/></div>
+      </div>
+
+      <div class="slides">
+        <div class="desc">
+          <h3>Access on demand</h3>
+          <p>Day, night rain or sunshine, tou can access our vast library of live recorded video.</p>
+        </div>
+        <div class="imgdesc"><img src="" alt="Broken Image"/></div>
+      </div>
+
+      <div class="slides">
+        <div class="desc">
+          <h3>Great pricing</h3>
+          <p>You have unlimited access to our video library, which is cheaper than one class at almost any studio.</p>
+        </div>
+        <div class="imgdesc"><img src="" alt="Broken Image"/></div>
+      </div>
+
+      <div class="arrownav">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </section>
+
+    <section class="yy-classes">
+      <div class="half">
+        <h2>Why not take a look at some of our classes?</h2>
+        <p>We'd like to help you achieve you best results so feel free to take a tour of our library.</p>
+        <button class="moreclass">Check out more classes</button>
+      </div>
+
+      <div class="quart">
+        <p class="summary">60 minute yoga classes are typically for those who want a quick yoga routine to start or end the day. Learn more about ours today.</p>
+        <div class="highlight">
+          <h3>Healthy Happy Hour</h3>
+          <p>-with <b>Linda Stewart</b> </p>
+          <span>Intensity</span><progress value="50" max="100"></progress>
+          <p>60 min</p>
+        </div>
+      </div>
+      <div class="quart">
+        <p class="summary">You're new to yoga, but you still want to get your flow on! We hear you! All you need is a mat, an open mind and a sense of adventure and you're on your way. A class great for your first time but will grow with you too.</p>
+        <div class="highlight">
+          <h3>Park Yoga</h3>
+          <p>-with <b>Jake Austin</b> </p>
+          <span>Intensity</span><progress value="40" max="100"></progress>
+          <p>10 min</p>
+        </div>
+      </div>
+
+      <div class="half">
+        <p class="summary">Are you looking for full-length 40 minute advanced yoga videos? Enjoy advanced yoga poses and different types of yoga with Poweryoga.com today.</p>
+        <div class="highlight">
+          <h3>The Advance Set</h3>
+          <p>-with <b>Linsey Lyon</b> </p>
+          <span>Intensity</span><progress value="20" max="100"></progress>
+          <p>40 min</p>
+        </div>
+      </div>
+
+      <div class="quart">
+        <p class="summary">A fun class working on strength and balance with a few little twists along the way.</p>  
+        <div class="highlight">
+          <h3>Super Start</h3>
+          <p>-with <b>Antony Silva</b> </p>
+          <span>Intensity</span><progress value="70" max="100"></progress>
+          <p>20 min</p>
+        </div>
+      </div>
+      <div class="quart">
+        <p class="summary">Advance Class – Something different mostly on the floor. Stamina and strength orientated.</p>
+        <div class="highlight">
+          <h3>Powerful Floor</h3>
+          <p>-with <b>Mia Bernard</b> </p>
+          <span>Intensity</span><progress value="95" max="100"></progress>
+          <p>90 min</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="yy-testim">
+      <div class="quotes">
+        <h3>What <b>People</b> Say About Us</h3>
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+        <p id="quotes">kjsnrfjksn skjfnkjrnf ksjnkjrs  kjfsrnk jfnsknfiu ,mcje kkjndiujweknn ow3ukjek</p>
+        <p id="person"><img src="" alt=""> hjbjhb</p>
+        <div class="arrows"></div><!--l and r arrows quote symb-->
+      </div>
+      <div class="aside">
+        <img src="" alt="">
+      </div>
+    </section>
+
+    <section class="yy-tips">
+      <div class="card">
+        <a href="" class="holder"></a>
+        <div class="card_header">
+          <h3 class="headline">How to Relax in Savasana?</h3>
+        </div>
+        <div class="card_footer"></div>
+      </div>
+
+      <div class="card">
+        <a href="" class="holder"></a>
+        <div class="card_header">
+          <h3 class="headline">Common Yoga Terms Explained</h3>
+        </div>
+        <div class="card_footer"></div>
+      </div>
+      
+      <div class="card">
+        <a href="" class="holder"></a>
+        <div class="card_header">
+          <h3 class="headline">Should You Drink During Yoga Class?</h3>
+        </div>
+        <div class="card_footer"></div>
+      </div>
+
+      <div class="card">
+        <a href="" class="holder"></a>
+        <div class="card_header">
+          <h3 class="headline">Three Ways Yoga Can Make You More Creative</h3>
+        </div>
+        <div class="card_footer"></div>
+      </div>
+
+      <div class="card">
+        <a href="" class="holder"></a>
+        <div class="card_header">
+          <h3 class="headline">Myths and Facts About Yoga</h3>
+        </div>
+        <div class="card_footer"></div>
+      </div>
+      
+      <div class="card">
+        <a href="" class="holder"></a>
+        <div class="card_header">
+          <h3 class="headline">Reduce Anxiety and Stress Doing Yoga</h3>
+        </div>
+        <div class="card_footer"></div>
+      </div>
+    </section>
+
+    <section class="yy-teachers">
+      <div class="onethird head"><p class="name">Linsey Lyon</p></div>
+      <div class="onethird head"><p class="name">Antony Silva</p></div>
+      <div class="onethird head"><p class="name">Mia Bernard</p></div>
+      <div class="instruct">View All Our Instructors</div>
+      <div class="onethird foot"><p class="name">Jack Graham</p></div>
+      <div class="onethird foot"><p class="name">Trevor Wright</p></div>
+      <div class="onethird foot"><p class="name">Aliesha Conner</p></div>
+    </section>
   </div>
-
-  <section class="yy-tech-dev">
-    <div class="slides">
-      <div class="desc">
-        <h3>On all your devices</h3>
-        <p>Access any of our content on any of your devices</p>
-      </div>
-      <div class="imgdesc"><img src="" alt="Broken Image"/></div>
-    </div>
-
-    <div class="slides">
-      <div class="desc">
-        <h3>Access on demand</h3>
-        <p>Day, night rain or sunshine, tou can access our vast library of live recorded video.</p>
-      </div>
-      <div class="imgdesc"><img src="" alt="Broken Image"/></div>
-    </div>
-
-    <div class="slides">
-      <div class="desc">
-        <h3>Great pricing</h3>
-        <p>You have unlimited access to our video library, which is cheaper than one class at almost any studio.</p>
-      </div>
-      <div class="imgdesc"><img src="" alt="Broken Image"/></div>
-    </div>
-
-    <div class="arrownav">
-      <div class="left"></div>
-      <div class="right"></div>
-    </div>
-  </section>
-
-  <section class="yy-classes">
-    <div class="half">
-      <p class="summary"></p>
-      <h2>Why not take a look at some of our classes?</h2>
-      <p>We'd like to help you achieve you best results so feel free to take a tour of our library.</p>
-      <button class="moreclass">Check out more classes</button>
-    </div>
-
-    <div class="quart">
-      <p class="summary">60 minute yoga classes are typically for those who want a quick yoga routine to start or end the day. Learn more about ours today.</p>
-      <h3>Healthy Happy Hour</h3>
-      <p>-with <b>Linda Stewart</b> </p>
-      <span>Intensity</span><progress value="50" max="100"/>
-      <i>60 min</i>
-    </div>
-    <div class="quart">
-      <p class="summary">You're new to yoga, but you still want to get your flow on! We hear you! All you need is a mat, an open mind and a sense of adventure and you're on your way. A class great for your first time but will grow with you too.</p>
-      <h3>Park Yoga</h3>
-      <p>-with <b>Jake Austin</b> </p>
-      <span>Intensity</span><progress value="40" max="100"/>
-      <i>10 min</i>
-    </div>
-
-    <div class="half">
-      <p class="summary">Are you looking for full-length 40 minute advanced yoga videos? Enjoy advanced yoga poses and different types of yoga with Poweryoga.com today.</p>
-      <h3>The Advance Set</h3>
-      <p>-with <b>Linsey Lyon</b> </p>
-      <span>Intensity</span><progress value="20" max="100"/>
-      <i>40 min</i>
-    </div>
-
-    <div class="quart">
-      <p class="summary">A fun class working on strength and balance with a few little twists along the way.</p>  
-      <h3>Super Start</h3>
-      <p>-with <b>Antony Silva</b> </p>
-      <span>Intensity</span><progress value="70" max="100"/>
-      <i>20 min</i>
-    </div>
-    <div class="quart">
-      <p class="summary">Advance Class – Something different mostly on the floor. Stamina and strength orientated.</p>
-      <h3>Powerful Floor</h3>
-      <p>-with <b>Mia Bernard</b> </p>
-      <span>Intensity</span><progress value="95" max="100"/>
-      <i>90 min</i>
-    </div>
-  </section>
-
-  <section class="yy-testim">
-    <h3>What <b>People</b> Say About Us</h3>
-    <div class="quotes">
-      <div class="arrows"></div><!--l and r arrows quote symb-->
-    </div>
-    <div class="aside">
-      <img src="" alt="">
-    </div>
-  </section>
-
-  <section class="yy-tips">
-    <div class="card">
-      <a href="" class="holder"></a>
-      <div class="card_header">
-        <h3 class="headline">How to Relax in Savasana?</h3>
-      </div>
-      <div class="card_footer"></div>
-    </div>
-
-    <div class="card">
-      <a href="" class="holder"></a>
-      <div class="card_header">
-        <h3 class="headline">Common Yoga Terms Explained</h3>
-      </div>
-      <div class="card_footer"></div>
-    </div>
-    
-    <div class="card">
-      <a href="" class="holder"></a>
-      <div class="card_header">
-        <h3 class="headline">Should You Drink During Yoga Class?</h3>
-      </div>
-      <div class="card_footer"></div>
-    </div>
-
-    <div class="card">
-      <a href="" class="holder"></a>
-      <div class="card_header">
-        <h3 class="headline">Three Ways Yoga Can Make You More Creative</h3>
-      </div>
-      <div class="card_footer"></div>
-    </div>
-
-    <div class="card">
-      <a href="" class="holder"></a>
-      <div class="card_header">
-        <h3 class="headline">Myths and Facts About Yoga</h3>
-      </div>
-      <div class="card_footer"></div>
-    </div>
-    
-    <div class="card">
-      <a href="" class="holder"></a>
-      <div class="card_header">
-        <h3 class="headline">Reduce Anxiety and Stress Doing Yoga</h3>
-      </div>
-      <div class="card_footer"></div>
-    </div>
-  </section>
-
-  <section class="yy-teachers">
-    <div class="onethird head"><p class="name">Linsey Lyon</p></div>
-    <div class="onethird head"><p class="name">Antony Silva</p></div>
-    <div class="onethird head"><p class="name">Mia Bernard</p></div>
-    <div class="instruct">View All Our Instructors</div>
-    <div class="onethird foot"><p class="name">Jack Graham</p></div>
-    <div class="onethird foot"><p class="name">Trevor Wright</p></div>
-    <div class="onethird foot"><p class="name">Aliesha Conner</p></div>
-  </section>
 
   <div class="footer">
     <!--Logo copyr-->
