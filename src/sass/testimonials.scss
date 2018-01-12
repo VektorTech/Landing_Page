@@ -1,0 +1,35 @@
+$quotpad: 80px;
+
+.yy-testim {
+    .quotes {
+        width: 65%;
+        height: 100vh;
+        float: left;
+
+        h3 {
+            padding-left: $quotpad;
+            margin-top: 100px;
+        }
+
+        i {
+            float: right;
+            margin-right: 70px;
+        }
+
+        #quotes {
+            padding-top: 80px;
+            padding-left: $quotpad;
+            width: 85%;
+        }
+
+        #person {
+            padding-top: 40px;
+            padding-left: $quotpad;
+        }
+    }
+    .aside {
+        width: 35%;
+        height: 100vh;
+        float: left;
+    }
+}

@@ -1,171 +1,18 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
+
 @import url('reset.css');
 
-$quotpad: 80px;
-
-.header {
-    position: fixed;
-    width: 100%;
-    height: 40px;
-   // margin-top: -40px;
-    #logo {
-        float: left;
-    }
-
-    .headnav {
-        float: right;
-        margin-right: 30px;
-    }
-
-    .navbar {
-        list-style-type: none;
-        display: inline;
-        li {
-            display: inline-block;
-            padding: 0 10px;
-        }
-    }
-
-    #log_sign {
-        display: inline;
-        button {
-            display: inline-block;
-        }
-    }
-}
-
-.banner {
-    width: 100%;
-    height: 100vh;
-    
-    .inner-banner {
-        margin: 200px auto 20px auto;
-        text-align: center;
-    }
-
-    button {
-        display: block;
-        margin: 0 auto;
-    }
-}
+@import "header.scss";
+@import "banner.scss";
+@import "slides_show.scss";
+@import "classes_tour.scss";
+@import "testimonials.scss";
+@import "tips.scss";
+@import "teachers.scss";
+@import "about.scss";
+@import "footer.scss";
 
 section{
     width: 100%;
 }
-
-.slides {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-
-    .desc {
-        float: left;
-        width: 50%;
-        height: 100vh;
-    }
-    .imgdesc {
-        float: left;
-        width: 50%;
-        height: 100vh;
-    }
-}
-
-.arrownav {
-    background: red;
-    width: 100%;
-    height: 40px;
-    margin-top: -350px;
-}
-
-.half {
-    float: left;
-    width: 50%;
-    height: 50vh;
-    background: pink;
-
-    .highlight {
-        margin-top: 100px;
-        margin-left: 30px;
-    }
-}
-
-.summary {
-    height: 120px;
-}
-
-.quart {
-    float: left;
-    width: 25%;
-    height: 50vh;
-    overflow: hidden;
-    background: orange;
-
-    .highlight {
-        margin-top: 100px;
-        margin-left: 30px;
-    }
-}
-
-.yy-testim {
-    .quotes {
-        width: 65%;
-        height: 100vh;
-        float: left;
-
-        h3 {
-            padding-left: $quotpad;
-            margin-top: 100px;
-        }
-
-        i {
-            float: right;
-            margin-right: 70px;
-        }
-
-        #quotes {
-            padding-top: 80px;
-            padding-left: $quotpad;
-            width: 85%;
-        }
-
-        #person {
-            padding-top: 40px;
-            padding-left: $quotpad;
-        }
-    }
-    .aside {
-        width: 35%;
-        height: 100vh;
-        float: left;
-    }
-}
-
-.card {
-    width: 28%;
-    height: 48vh;
-    float: left;
-    margin: 5px 2.66% 5px 2.66%;
-    overflow: hidden;
-    border-radius: 3%;
-
-    .card_header {
-        width: 100%;
-        height: 50%;
-        background-color: lightcoral;
-
-        .headline {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-            padding-top: 20px;
-        }
-    }
-
-    .card_footer {
-        width: 100%;
-        height: 50%;
-        background: lightgreen;
-    }
-}
-

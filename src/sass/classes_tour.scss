@@ -1,0 +1,28 @@
+.half {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background: pink;
+
+    .highlight {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
+
+.summary {
+    height: 120px;
+}
+
+.quart {
+    float: left;
+    width: 25%;
+    height: 50vh;
+    overflow: hidden;
+    background: orange;
+
+    .highlight {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
