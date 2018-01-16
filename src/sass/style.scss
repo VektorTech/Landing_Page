@@ -1,5 +1,7 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "_vars.scss";
 
 @import url('reset.css');
 
@@ -21,4 +23,20 @@ section{
     overflow: hidden;
     z-index: 1;
     margin-bottom: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #6c1f55;
 }

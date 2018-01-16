@@ -3,6 +3,8 @@
     position: fixed;
     bottom: 20%;
     z-index: -2;
+    background: #6c1f55;
+
     .one-thrd {
         overflow: hidden;
         padding-left: 30px;
@@ -10,6 +12,6 @@
         float: left;
         width: 33.333%;
         height: 400px;
-        border-right: 1px solid grey;
+        border-right: 1px solid #5e2f62;
     }
 }
