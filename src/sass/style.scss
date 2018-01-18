@@ -1,19 +1,14 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import "_vars.scss";
 
 @import url('reset.css');
 
-@import "header.scss";
-@import "banner.scss";
-@import "slides_show.scss";
-@import "classes_tour.scss";
-@import "testimonials.scss";
-@import "tips.scss";
-@import "teachers.scss";
-@import "about.scss";
-@import "footer.scss";
+$quotpad: 80px;
+$bannerpad: 15px;
+$lightFont: rgb(241, 235, 240);
+$btnColor:  #9b4c83;
+$darkFont: rgb(66, 43, 62);
 
 section{
     width: 100%;
@@ -37,6 +32,425 @@ button {
     cursor: pointer;
 }
 
-body {
+.header {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    transition: height 0.35s ease-out;
+    background-color: #fff7ff;
+    text-transform: uppercase;
+    z-index: 40;
+    
+    #logo {
+        float: left;
+    }
+
+    .headnav {
+        float: right;
+        margin-right: 30px;
+    }
+
+    .navbar {
+        list-style-type: none;
+        display: inline;     
+        li {
+            display: inline-block;
+            padding: 0 10px;
+            padding-top: 5px;
+            
+            a {
+                color: rgb(32, 32, 32);
+            }
+        }
+    }
+
+    #log_sign {
+        display: inline;
+            
+        button {
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            background: transparent;
+            border: 2px solid $btnColor;
+            color: rgb(32, 32, 32);
+            border-radius: 7px;  
+        }
+
+        #join {
+            width: 80px;
+            background: $btnColor;
+            color: rgb(247, 243, 246);
+        }     
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    padding-top: 2px;
+    user-select: none;
+
+    #filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #4b1e50;
+        opacity: .5;
+        z-index: -1;
+    }
+
+    .inner-banner {
+        color: $lightFont;
+        margin: 100px auto 0 auto;
+        padding-top: 40vh;
+        transform: translateY(-40%); 
+        text-align: center;
+
+        h3 {
+            font-weight: 800;
+            font-size: 50px;
+            padding-bottom: $bannerpad;
+        }
+
+        p {
+            font-size: 30px;  
+            padding-bottom: $bannerpad;      
+        }
+
+        #trial {
+            width: 230px;
+            height: 40px;
+            background: $btnColor;
+            border: 2px solid $btnColor;
+            border-radius: 8px;
+            color: $lightFont;
+            font-size: 15px;
+        }
+
+        #learn {
+            background: transparent;
+            border: none;
+            color: $lightFont;
+            padding-top: $bannerpad;
+        }
+    }
+
+    .vid {
+        min-width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.yy-tech-dev {
+    height: 100vh;
+    width: 301%;
+    overflow: auto;
+
+    .slides {
+        width: 33.22%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        overflow: hidden;
+        background: #e5dde6;
+        transition: 1s;
+
+        .desc {
+            float: left;
+            width: 50%;
+            height: 100%;
+            padding-top: 70px;
+            text-align: center;
+            word-break: keep-all;
+
+            h3 {
+                white-space: nowrap;
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            p {
+                width: 500px;
+                margin: 0 auto;
+            }
+        }
+        .imgdesc {
+            float: left;
+            width: 50%;
+            height: 100%;
+            background: #773a7c;
+
+            img {
+                width: 350px;
+                height: 350px;
+                margin-top: 150px;
+                filter: invert(100%);//hue
+                user-select: none;
+                pointer-events: none;
+            } 
+        }
+
+        .first img {
+            width: 420px;
+            height: 280px;
+        }
+    }
+
+    .arrownav {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        top: 1000px;
+
+        .fa-arrow-right {
+            float: right;
+        }
+    }
+}
+
+.half {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background: #e0c5db;
+
+    .highlight {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
+
+.summary {
+    height: 120px;
+}
+
+.quart {
+    float: left;
+    width: 25%;
+    height: 50vh;
+    overflow: hidden;
+
+    .highlight {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
+
+section.yy-classes {
+    div.quart:nth-child(2){
+        background-image: url('https://dl.dropboxusercontent.com/content_link/o7qHn5BmNO9g1EHxdsJ207eFkYZUaym8Iz41YdrAlLFSbOzH4Y2GQrdH3TCi1DiZ/file');
+        background-size: cover;
+        background-position:80% 50%;
+    }
+    div.quart:nth-child(3){
+        background-image: url('https://dl.dropboxusercontent.com/content_link/KZttwXDo8fEszvt2IpXhXynYcYC4c6mVN3v00659jDBv1btEULl8lMAplwvhFrKa/file');
+        background-size: cover;
+        background-position:50% 50%;
+    }
+
+    div:nth-child(4){
+        background-image: url('https://dl.dropboxusercontent.com/content_link/dgNFZmccj59eauNTsrtVH9lDSGcfdAyUzJytZkqPhHwZvo71Hjppc6BYJ83OKW7y/file');
+        background-size: cover;
+        background-position:70% 50%;
+    }
+
+    div.quart:nth-child(5){
+        background-image: url('https://dl.dropboxusercontent.com/content_link/A6ybDh5sG06QOXc4f5V7EnibMWTxyDUs1MKiTSoIwZoutMkTLVBsejzwNcU6P1RM/file');
+        background-size: cover;
+        background-position:50% 50%;
+    }
+
+    div.quart:nth-child(6){
+        background-image: url('https://dl.dropboxusercontent.com/content_link/ZCJy2gnBByryBpEdHfnUVk7TE0rjilYF2VrItRtyrfr88HWIWd0GyvdcVva8TpOc/file');
+        background-size: cover;
+        background-position:70% 50%;
+    }
+}
+
+.yy-about {
+    background: #5e2f62;
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+    overflow: hidden;
+
+    .about-inner {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        margin-top: -70px;
+        left: 10%;
+        border-radius: 0.5%;
+        background: url('https://static.pexels.com/photos/588561/pexels-photo-588561.jpeg');
+        background-size: cover;
+
+        h3 {
+            float: right;
+            padding-right: 33%;
+            padding-top: 80px;
+        }
+
+        p {
+            clear: both;
+            float: right;
+            width: 40%;
+            padding-top: 10px;
+        }
+    }
+}
+
+.yy-testim {
+    .quotes {
+        width: 65%;
+        height: 100vh;
+        float: left;
+        background: #b36ea4;
+
+        h3 {
+            padding-left: $quotpad;
+            margin-top: 100px;
+        }
+
+        i {
+            float: right;
+            margin-right: 70px;
+        }
+
+        #quotes {
+            padding-top: 80px;
+            padding-left: $quotpad;
+            width: 85%;
+        }
+
+        #person {
+            padding-top: 40px;
+            padding-left: $quotpad;
+        }
+    }
+    .aside {
+        width: 35%;
+        height: 100vh;
+        float: left;
+        background-image: url('https://cdn.pixabay.com/photo/2016/09/12/16/55/girl-1665173_960_720.jpg');
+        background-size: cover;
+        background-position:80% 50%;
+    }
+}
+
+.yy-tips{
+    width: 100%;
+    height: 100vh;
+    background: #e3ceec;
+    .card {
+        width: 28%;
+        height: 48vh;
+        float: left;
+        margin: 5px 2.66% 8px 2.66%;
+        overflow: hidden;
+        border-radius: 3%;
+        cursor: pointer;
+
+        .card_header {
+            width: 100%;
+            height: 50%;
+            background-color: #6e4c7c;
+
+            .headline {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 20px;
+            }
+        }
+
+        .card_footer {
+            width: 100%;
+            height: 50%;
+        }
+    }
+}
+
+.yy-teachers {
+    width: 100%;
+    height: 100vh;
+    background-color: #0b030f;
+    .onethird {
+        width: 33.333%;
+        height: 50vh;
+        float: left;
+        background: lightpink;
+    }
+    
+    .head {
+        padding-left: 30px;
+        padding-top: 20px
+    }
+    
+    .foot {
+        padding-left: 20px;
+        padding-top: 270px;
+    }
+}
+
+section {
+    div.onethird {
+        filter: grayscale(100%) brightness(70%) contrast(220%) blur(0.7px);
+
+        &:hover {
+            filter: brightness(60%) contrast(220%) blur(0.1px) sepia(100%) hue-rotate(240deg) saturate(130%);
+        }
+    }
+
+    div.onethird:nth-child(1) {
+        background-image: url('https://media.istockphoto.com/photos/happy-young-woman-smiling-portrait-picture-id485734753?k=6&m=485734753&s=612x612&w=0&h=481qIkH2Jpr4uJAsUohYZo8gl3AlA-58vnVwlXjzxtM=');
+        background-size: cover;
+    }
+    div.onethird:nth-child(2) {
+        background-image: url('https://media.istockphoto.com/photos/cool-african-man-picture-id544358094?k=6&m=544358094&s=612x612&w=0&h=Z4tSUuw-aZyxXqwvBgi9j0O3QZzQzcpJVCm6nulS1kw=');
+        background-size: cover;
+    }
+    div.onethird:nth-child(3) {
+        background-image: url('https://davidwolfecom-xt0mxgicgroc.stackpathdns.com/wp-content/uploads/2016/06/strong-girl-e1467346487831.jpg');
+        background-size: cover;
+    }
+    div.onethird:nth-child(4) {
+        background-image: url('https://media.istockphoto.com/photos/closeup-of-smiling-man-on-white-background-picture-id482907157?k=6&m=482907157&s=612x612&w=0&h=ud_ZzV_nVXQRJTKyqPio9VG0h-ByawBQvt1k-1j0BCA=');
+        background-size: cover;
+    }
+    div.onethird:nth-child(5) {
+        background-image: url('https://www.stockvault.net/data/2009/06/09/109080/preview16.jpg');
+        background-size: cover;
+    }
+    div.onethird:nth-child(6) {
+        background-image: url('https://media.gettyimages.com/photos/beautiful-africanamerican-woman-picture-id166669823?b=1&k=6&m=166669823&s=612x612&w=0&h=gz_w2lo0TITuX_-L23rCAWITkrJe1CuUK1urRwUYUMk=');
+        background-size: cover;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -2;
     background: #6c1f55;
+
+    .one-thrd {
+        overflow: hidden;
+        padding-left: 30px;
+        margin-top: 35%;
+        transform: translateY(-65%);
+        float: left;
+        width: 33.333%;
+        height: 400px;
+        border-right: 1px solid #5e2f62;
+    }
 }
